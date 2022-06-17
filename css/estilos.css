@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------*/
+/*Titulos y subtitulos         */
+/*-----------------------------*/
+.titulo {
+	font-size: 25px;
+	color: #333399;
+	margin-bottom: 10px;
+
+}
+
+.subtitulo {
+	font-size: 20px;
+	font-weight: 300;
+	color: #000;
+}
+
+.after::after {
+	/* Agrega una caja en este caso despues de el parrafo que definimos con el nombre after  */
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	width: 100px;
+	height: 2px;
+	background: #127ae3;
+	margin-bottom: 40px;
+}
+
+/*-----------------------------*/
+/*Header                       */
+/*-----------------------------*/
+header {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+header .logo {
+	padding-left: 90px;
+	margin-bottom: 10px;
+}
+
+.logo img {
+	margin: auto;
+	width: 80%;
+}
+
+.disap{
+	display: none;
+}
+
+/*-----------------------------*/
+/*Menu                         */
+/*-----------------------------*/
+nav {
+	background-color: #333399;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	/* Menu pegajoso */
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+
+.contenedor-nav {
+	width: 100%;
+	display: flex;
+	margin: auto;
+	width: 90%;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1000px;
+	height: inherit;
+}
+
+nav .enlaces a {
+	display: inline-block;
+	padding: 10px 10px;
+	margin-right: 40px;
+	font-size: 19px;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	text-align: center;
+	/*color: inherit;*/
+	color: #fff;
+	/* Que herede automaticamente de su padre */
+}
+
+nav .enlaces a:hover {
+	border-bottom: 3px solid #fff;
+	transition: 0.6s;
+}
+
+header .portada {
+	/*background: #1b5258;*/
+	padding-top: 48px;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.portada .cont-portada {
+	width: 20%;
+	margin: auto;
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+}
+
+.portada img {
+	width: 67%;
+}
+
+
+/*-----------------------------*/
+/*Cifras                       */
+/*-----------------------------*/
+.contenedor {
+	margin: auto;
+	/* Centrar todo ese contenido */
+	width: 90%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.mexico{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	text-align: center;
+}
+
+.cont-card{
+	width: 46%;
+	padding-bottom: 30px;
+}
+
+.cont-card img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.cont-card h4{
+	font-weight: 200;
+}
+
+.cont-comp{
+	width: 75%;
+	padding-bottom: 30px;
+}
+
+.cont-ti{
+	width: 30%;
+	margin-bottom: 50px;
+}
+
+.borde{
+	width: 31%;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-left: 1px solid #127ae3;
+	border-right: 1px solid #127ae3;
+}
+
+.cont-ti img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/*-----------------------------*/
+/*Prevención                   */
+/*-----------------------------*/
+.preventivas .prevent{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.prevent .cont-medidas{
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cont-medidas .medida{
+	text-align: justify;
+	width: 31%;
+	height: 20%;	
+	padding: 15px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.medida span{
+	color: red;
+}
+
+.medida h3{	
+	font-weight: 200;
+}
+
+.prevent .recom{
+	width: 32%;
+	height: 100%;
+	text-align: justify;
+}
+
+.recom img{
+	width: 100%;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-bottom: 10px;
+}
+
+.abajo{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.abajo .texto{
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	padding: 20px;
+	width: 45%;
+}
+
+.texto h2{
+	color: #127ae3;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+.texto h3{
+	text-align: justify;
+	font-weight: 200;
+}
+
+/*-----------------------------*/
+/*COEPRA                       */
+/*-----------------------------*/
+
+.comportamientos .riesgos{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	text-align: center;
+}
+
+.cont-comportamiento{
+	text-align: justify;
+	width: 30%;
+}
+
+.cont-comportamiento img{
+	width: 100%;
+	margin-bottom: 10px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.cont-comportamiento h3{
+	/*font-weight: 200;*/
+	margin-bottom: 10px;
+}
+
+.cont-comportamiento h4{
+	font-weight: 200;
+}
+
+/*-----------------------------*/
+/*Footer                       */
+/*-----------------------------*/
+.footer{
+	width: 100%;
+	background: #000;
+}
+
+.datos .izquierda{
+	width: 70%;
+	margin: auto;
+}
+
+.datos p{
+	text-align: justify;
+	font-size: 18px;
+	padding: 20px;
+	color: #fff;
+}
+
+.derecha{
+	width: 70%;
+	margin: auto;
+	margin-bottom: 30px;;
+}
+
+.derecha h3, .derecha p{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
